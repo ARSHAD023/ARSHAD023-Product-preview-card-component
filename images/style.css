@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+:root {
+
+    --dark-cyan: #3c8067;
+    --cream: #f2ebe3;
+
+    --dark-blue: #1c232b;
+    --gray-blue: #6c7289;
+    --snow: #ffffff;
+
+    /******** Fonts *******/
+
+    --primary-font: 'Fraunces', serif;
+    --sec-font: 'Montserrat', sans-serif;
+
+}
+
+body{
+    background-color: var(--cream);
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.main {
+    width: 320px;
+    background-color: var(--snow);
+    border-radius: 12px;
+}
+
+.img-box img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+
+}
+
+#mbl-img {
+    display: block;
+}
+
+#dsktp-img {
+    display: none;
+}
+
+.description * {
+    padding: 4px 8px;
+}
+.v-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+}
+
+
+.description h1 {
+    /* font-size: 38px; */
+    font-weight: bolder;
+}
+
+.description p {
+    font-family: var(--sec-font);
+    color: hsla(0, 0%, 15%, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.price h2 {
+    color: var(--dark-cyan);
+    font-family: var(--primary-font);
+}
+
+.price h3 {
+    color: var(--gray-blue);
+    opacity: 0.5;
+    font-weight: 300;
+    font-family: var(--sec-font);
+    text-decoration: line-through;
+
+}
+
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-cyan);
+    color: var(--cream);
+    font-family: var(--sec-font);
+    width: 89%;
+    margin: 15px auto;
+    padding: 9px 0;
+    border-radius: 8px;
+    outline: none;
+
+}
+
+.btn:hover{
+    background-color: #214738;
+}
+
+@media (min-width: 1200px) {
+    .main {
+        width: 35%;
+        height: 50vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #mbl-img {
+        display: none;
+    }
+
+    .img-box img {
+        width: 50%;
+        height: 50vh;
+        border-radius: 12px 0 0 12px;
+    }
+
+    #dsktp-img {
+        display: block;
+        width: 100%;
+    }
+
+    .description {
+        padding: 2px 8px;
+        width: 50%;
+        height: 50vh;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
